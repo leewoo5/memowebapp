@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "592210740049",
+    "firebase_url": "https://memowebapp-be180.firebaseio.com",
+    "project_id": "memowebapp-be180",
+    "storage_bucket": "memowebapp-be180.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592210740049:android:8b67538ca1338b79",
+        "android_client_info": {
+          "package_name": "com.lee.memowebapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592210740049-dc19clms70mdc930c02d3gqt0eqg0nfq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWIwIIqBLDQO5A3pRi97pz7xQAEK-kIXs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
