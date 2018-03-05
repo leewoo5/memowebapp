@@ -32,6 +32,9 @@ dependencies {
     compile 'com.google.firebase:firebase-auth:11.8.0'
     //구글 플레이서비스 인증 기능 모듈
     compile 'com.google.android.gms:play-services-auth:11.8.0'
+    //firebase DB 의존성
+    compile 'com.google.firebase:firebase-database:11.8.0'
+    
 }
 
 
