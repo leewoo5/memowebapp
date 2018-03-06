@@ -1,6 +1,9 @@
 package com.lee.memowebapp;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -31,7 +34,7 @@ public class AuthActivity extends AppCompatActivity implements GoogleApiClient.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         mSignInBtn = (SignInButton) findViewById(R.id.sign_in_btn);
 
         // Configure Google Sign In
@@ -79,9 +82,9 @@ public class AuthActivity extends AppCompatActivity implements GoogleApiClient.O
         authResultTask.addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
             public void onSuccess(AuthResult authResult) {
+
                 startActivity(new Intent(AuthActivity.this, MainActivity.class));
                 finish();
-                Toast.makeText(AuthActivity.this, "환영합니다.", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -95,4 +98,6 @@ public class AuthActivity extends AppCompatActivity implements GoogleApiClient.O
     public void onPointerCaptureChanged(boolean hasCapture) {
 
     }
+
+
 }
